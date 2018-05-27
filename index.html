@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="styles/style.css">
+
+  
+</head>
+
+<body>
+
+ <div class='container'>
+    <header>
+      <nav>
+        <a href="#" class="navLink activeLink" onclick="openContent(event, 'all')">All</a>
+        <a href="#" class="navLink" onclick="openContent (event, 'online')">Online</a>
+        <a href="#" class="navLink" onclick="openContent (event, 'offline')">Offline</a>
+      </nav>
+      <input type="checkbox" class="toggleNav" id="toggleNav">
+    </header>
+    <main>
+      <section id="all" class="linkContent">
+        <h2>All Users</h2>
+        <div id="allUserContent">
+          <div class="userEntry" style='font-variant: small-caps'>
+            <span class="userName">Name</span>
+            <span class="userStatus">Status</span>
+          </div>
+        </div>
+      </section>
+      <section id="online" class="linkContent">
+        <h2>Online Users</h2>
+        <div id="onlineUserContent">
+          <div class="userEntry" style='font-variant: small-caps'>
+            <span class="userName">Name</span>
+            <span class="userStatus">Status</span>
+          </div>
+        </div>
+      </section>
+      <section id="offline" class="offline linkContent">
+        <h2>Offline Users</h2>
+        <div id="offlineUserContent">
+          <div class="userEntry" style='font-variant: small-caps'>
+            <span class="userName">Name</span>
+            <span class="userStatus">Status</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="scripts/app.js"></script>
+
+
+
+
+</body>
+
+</html>
