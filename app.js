@@ -1,7 +1,7 @@
-var users = ["ESL_SC2", "OgamingSC2", "freecodecamp", "warframe", "iflynn", "noobs2ninjas", "frozenballz"];
+var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
 
 users.forEach(function (user) {
-    fetch("https://api.twitch.tv/kraken/streams/" + user, {
+    fetch("https://wind-bow.gomix.me/twitch-api/" + user, {
         headers: {
             'Client-ID': 'xg0f37yzeg6izr3meybs4oz9lhymo8'
         },
